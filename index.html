@@ -30,11 +30,24 @@
             font-weight: 400;
             font-style: normal;
         }
+
+
+         /* Animation */   
+         .zoomInOut{    
+            animation: zoomInOut 3s ease-in-out infinite; /* Runs 3 times */
+        }
+
+        @keyframes zoomInOut {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
     </style>
 </head>
 
 <body class="sora-regular">
-    <header class="bg-gradient-to-b from-white to-stone-100 ">
+    <!-- nav&hero  -->
+    <header class="bg-gradient-to-b from-white to-stone-100">
         <!-- navbar  -->
             <nav class="container mx-auto">
                 <div class="navbar flex justify-center items-center border border-green-600 md:border-none">
@@ -82,10 +95,10 @@
             <!-- hero  -->
             <section>
                 <div class="text-center flex justify-center items-center flex-col gap-5 mb-20">
-                    <h1 class="font-semibold text-6xl">Freshness <span class="text-green-600">You Can<br>Count</span> On,Prices You’ll Love!</h1>
+                    <h1 class="font-semibold text-6xl zoomInOut">Freshness <span class="text-green-600">You Can<br>Count</span> On,Prices You’ll Love!</h1>
                     <p class="w-3/5 md:w-2/5">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
                         staples, we’ve got you covered every day!</p>
-                        <a class="btn bg-green-600 text-white hover:bg-green-700 animate-ping hover:animate-none">Order now</a>
+                        
                     <img src="./assets/hero-vegetables.png" alt="">
                 </div>
             </section>
@@ -158,88 +171,95 @@
         
         
                     <div class="grid gap-2 md:gap-5 grid-cols-2 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 lg:w-4/5">
+                        
                         <!-- card  -->
                         <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
-                            <img src="./assets/onion.png" alt="">
+                            <img src="./assets/tomato.png" alt="">
                             <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Tomato 500g</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
+                            </div>
+                        </div>
+                       
+                          
+                        <!-- card  -->
+                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
+                            <img src="./assets/tomato.png" alt="">
+                            <div class="space-y-1 p-1 md:p-2">
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Tomato 500g</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
                             </div>
                         </div>
                         <!-- card  -->
                         <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
                             <img src="./assets/onion.png" alt="">
                             <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Onion 1 KG</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
+                            </div>
+                        </div>
+                         <!-- card  -->
+                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
+                            <img src="./assets/potato.png" alt="">
+                            <div class="space-y-1 p-1 md:p-2">
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Potato 1 KG</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
+                            </div>
+                        </div>
+        
+                      
+                        <!-- card  -->
+                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
+                            <img src="./assets/potato.png" alt="">
+                            <div class="space-y-1 p-1 md:p-2">
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Potato 1 KG</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
                             </div>
                         </div>
                         <!-- card  -->
                         <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
                             <img src="./assets/onion.png" alt="">
                             <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Onion 1 KG</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
                             </div>
                         </div>
+                    
+        
                         <!-- card  -->
                         <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
-                            <img src="./assets/onion.png" alt="">
+                            <img src="./assets/tomato.png" alt="">
                             <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
-                            </div>
-                        </div>
-                        <!-- card  -->
-                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
-                            <img src="./assets/onion.png" alt="">
-                            <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
-                            </div>
-                        </div>
-                        <!-- card  -->
-                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
-                            <img src="./assets/onion.png" alt="">
-                            <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
-                            </div>
-                        </div>
-                        <!-- card  -->
-                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
-                            <img src="./assets/onion.png" alt="">
-                            <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
-                            </div>
-                        </div>
-                        <!-- card  -->
-                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
-                            <img src="./assets/onion.png" alt="">
-                            <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
-                            </div>
-                        </div>
-                        <!-- card  -->
-                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
-                            <img src="./assets/onion.png" alt="">
-                            <div class="space-y-1 p-1 md:p-2">
-                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-xl"></i>4.5</h4>
-                                <h3 class="font-medium text-sm md:text-base lg:text-xl">Onion 1 KG</h3>
-                                <p class="text-sm md:text-base lg:text-xl">$39.99</p>
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Tomato 500g</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
                             </div>
                         </div>
                         
+                        <!-- card  -->
+                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
+                            <img src="./assets/onion.png" alt="">
+                            <div class="space-y-1 p-1 md:p-2">
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Onion 1 KG</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
+                            </div>
+                        </div>
+                            <!-- card  -->
+                        <div class="flex  h-28 shadow-xl rounded-md p-1 md:p-2 bg-white">
+                            <img src="./assets/potato.png" alt="">
+                            <div class="space-y-1 p-1 md:p-2">
+                                <h4><i class="fa-solid fa-star text-orange-400 text-sm md:text-base lg:text-lg"></i>4.5</h4>
+                                <h3 class="font-medium text-sm md:text-base lg:text-lg">Potato 1 KG</h3>
+                                <p class="text-sm md:text-base lg:text-lg">$39.99</p>
+                            </div>
+                        </div>
         
         
                     </div>
@@ -287,7 +307,7 @@
             </h1>
             <!-- faq img -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              <img src="./assets/faq.png" alt="">
+              <img class="zoomInOut hover:animate-none" src="./assets/faq.png" alt="">
       
               <div class="flex flex-col justify-between w-full">
       
